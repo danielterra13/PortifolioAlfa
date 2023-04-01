@@ -1,0 +1,1037 @@
+
+
+html {
+    scroll-behavior: smooth ;
+}
+
+body{
+    background-color: rgb(128, 128, 128);
+    z-index: -99;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+    background-color:transparent;
+    border-left: 2px black dashed;
+}
+::-webkit-scrollbar-thumb{ 
+    border: 3px black solid;
+    background-color: limegreen; 
+}
+
+
+a{text-decoration: none;color:black}
+
+#baixo{display: none;
+position: absolute;
+top: 400%;
+left: 49%;
+}
+
+#Cabesario{ position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 15%;
+background-color: lightgray;
+}
+#cab1{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+#DT{position: relative; 
+left: 0%;
+width: 100%;
+top: 0%;
+height: 25%;
+padding: 1%;
+text-align: center;
+background-color: limegreen;
+border-radius: 0.2vw;
+font-size: 2.5vw;
+font-family:"Press Start 2P", "consolas"
+}
+#DT:hover{
+    animation-iteration-count:unset;
+    animation-duration: 300ms;
+    animation-name: dth;
+    background-color: black;
+    color: limegreen;
+}
+@keyframes dth {
+0% {
+color: black;
+background-color: limegreen;
+    }
+100%{
+color: limegreen;
+background-color: black;
+     }
+}
+#DT:not(:hover){
+    animation-iteration-count:unset;
+    animation-duration: 300ms;
+    animation-name: dth2;
+    background-color: limegreen;
+    color: black;
+}
+@keyframes dth2 {
+0% {
+color: limegreen;
+background-color: black;
+    }
+100%{
+color: black;
+background-color: limegreen;
+     }
+}
+#DT:active{
+    font-size: 225%;
+    background-color: white;
+    color: black;
+}
+#org{
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    text-align: center;
+
+
+}
+#Efeitinho{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 5%;
+    height: 100%;
+
+    animation-iteration-count:infinite;
+    animation-duration: 5000ms;
+    animation-name: Theworld;
+    z-index: -1;
+    background-color: rgba(173, 255, 47, 40%);
+}
+
+@keyframes Theworld {
+
+    0% {
+        background-color: rgba(173, 255, 47, 40%);
+    left: 0%;
+    transform: rotateY(0deg);
+    }
+    50% {
+        background-color: rgba(173, 255, 47, 40%);
+    left: 70%;
+    transform: rotateY(0deg);
+    }
+
+    100%{
+        background-color: rgba(173, 255, 47, 40%);
+    left: 0%;
+    transform: rotateY(0deg);
+    }
+}
+
+#Efeitinho2{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 5%;
+    height: 100%;
+
+    animation-iteration-count:infinite;
+    animation-duration: 5000ms;
+    animation-name: Theworld2;
+    z-index: -1;
+    background-color: rgba(173, 255, 47, 20%);
+}
+
+@keyframes Theworld2 {
+
+    0% {
+        background-color: rgba(173, 255, 47, 25%);
+    left: 5%;
+    transform: rotateY(0deg);
+    }
+    50% {
+        background-color: rgba(173, 255, 47, 25%);
+    left: 65%;
+    transform: rotateY(180deg);
+    }
+    100%{
+        background-color: rgba(173, 255, 47, 25%);
+    left: 5%;
+    transform: rotateY(0deg);
+    }
+}
+
+#Efeitinho3{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 5%;
+    height: 100%;
+
+    animation-iteration-count:infinite;
+    animation-duration: 5000ms;
+    animation-name: Theworld3;
+    z-index: -1;
+    background-color: rgba(173, 255, 47, 15%);
+}
+
+@keyframes Theworld3 {
+
+    0% {
+        background-color: rgba(173, 255, 47, 15%);
+    left: 10%;
+    transform: rotateY(0deg);
+    }
+    50% {
+        background-color: rgba(173, 255, 47, 15%);
+    left: 60%;
+    transform: rotateY(180deg);
+    }
+    100%{
+        background-color: rgba(173, 255, 47, 15%);
+    left: 10%;
+    transform: rotateY(0deg);
+    }
+}
+
+.apre{
+font-size: 200%;
+color: white;
+text-shadow: 0.17vw 0.17vw  black;
+}
+
+#aprebtn{position: relative;
+    left: 0%;
+    width: 100%;
+    font-size: 200%;
+    background-color: limegreen;
+    border: 1vw solid limegreen;
+    border-radius: 1vw;
+}
+#aprebtn:hover{
+    animation-iteration-count:unset;
+    animation-duration: 300ms;
+    animation-name: btnapre;
+    background-color: black;
+    color: limegreen;
+    border: 1vw solid black;
+}
+@keyframes btnapre {
+0% {
+color: black;
+background-color: limegreen;
+border: 1vw solid limegreen;
+    }
+100%{
+color: limegreen;
+background-color: black;
+border: 1vw solid black;
+     }
+}
+#aprebtn:not(:hover){
+    animation-iteration-count:unset;
+    animation-duration: 300ms;
+    animation-name: btnapre2;
+    background-color: limegreen;
+    color: black;
+    border: 1vw solid limegreen;
+}
+@keyframes btnapre2 {
+0% {
+color: limegreen;
+background-color: black;;
+border: 1vw solid black;;
+    }
+100%{
+color: black;;
+background-color: limegreen;
+border: 1vw solid limegreen;
+     }
+}
+#aprebtn:active{
+    color: black;
+    background-color: white;
+    border: 1vw solid white;
+}
+
+#hist{
+    position: relative;
+
+    left: 85%;
+    top: -100%;
+
+    width: 100%;
+    height: 10%;
+
+    opacity: 100%;
+    font-size: 200%;
+}
+
+#farm{
+    position: relative;
+    top: -100%;
+    left: 100%;
+    height: 100%;
+    width: 60%;
+    list-style-type: square;
+}
+.xp{position: relative;
+font-size: 2.5vw;
+margin-bottom: 25%;
+}
+#expecial{
+color: #0000FF;
+text-decoration: underline
+}
+
+#setinha{position: absolute;
+    top: 90%;
+    left: 40%;
+    z-index: 1;
+    color: #fff;
+
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+
+    animation-iteration-count: infinite;
+    animation-duration: 500ms;
+    animation-name: seta;
+}
+@keyframes seta{
+0% {
+font-size: 2vw;
+top: 90%;
+left: 40%;
+    }
+50%{
+font-size: 5vw;
+top: 85%;
+left: 35%;
+     }
+100%{
+font-size: 2vw;
+top: 90%;
+left: 40%;
+}
+}
+
+
+#Duni2{
+position: relative;
+width: 100%;
+height: 100%;
+left: -15%;
+z-index: 0;
+}
+#limiteu{
+    position: relative;
+    top: 0%;
+    height: 100%;
+    width: 50%;
+    left: 25%;
+    overflow: hidden;
+}
+
+#imgeu{position: relative;
+    top: 0%;
+    height: 100%;
+    width: 20%;
+    left: 25%;
+    background-color: lightgray;
+    overflow: hidden;
+    border-bottom: #000 solid 3px;
+}
+#imgeu:hover {position: relative;
+
+    animation-iteration-count:unset;
+    animation-duration: 400ms;
+    animation-name: iimg;
+    opacity: 100%;
+
+    left: 0%;
+    width: 55%;
+    padding-right: 45%;
+}
+@keyframes iimg {
+0%{
+    left: 50%;
+    width: 60%;
+    padding-right: 0%;
+}
+100%{
+    left: 0%;
+    width: 55%;
+    padding-right: 45%;
+     }
+}
+
+#imgeu:not(:hover) {position: relative;
+
+    animation-iteration-count:unset;
+    animation-duration: 400ms;
+    animation-name: iimg2;
+
+    left: 50%;
+    width: 60%;
+    padding-right: 0%;
+}
+@keyframes iimg2 {
+0%{
+    left: 0%;
+    width: 55%;
+    padding-right: 45%;
+}
+100%{
+    left: 50%;
+    width: 60%;
+    padding-right: 0%;
+}
+}
+
+#txtapre{position: relative;
+    top: 40%;
+    left: 15%;
+    width: 25%;
+    
+}
+
+#estabilizador{position: absolute;top: 101%;}
+
+#serv{position: absolute;
+    top: 110%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+    color: white;
+    font-size: 250%;
+}
+
+#expli{position: absolute;
+    top: 180%;
+    left: 6%;
+    font-family: 'Maven Pro', monospace;
+    font-size: 1.3vw;
+    }
+
+#orgbtn{
+    position: absolute;
+    top: 120%;
+    left: 5%;
+
+    width: 90%;
+    height: 65%;
+
+    display: flex;
+    justify-content: space-around ;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#btn1:active{
+    background-color: limegreen;
+}
+#btn1{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 25vw;
+    height: 20%;
+    text-align: center;
+    background-color: lightyellow;
+    font-size: 400%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+#btn1:hover{
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn1h;
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+}
+@keyframes btn1h {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+
+     }
+
+}
+
+#btn1:not(:hover){
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn1nh;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+}
+@keyframes btn1nh {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+     }
+}
+#btn2:active{
+    background-color: limegreen;
+}
+
+#btn2{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 25vw;
+    height: 20%;
+    text-align: center;
+    background-color: lightyellow;
+    font-size: 400%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+
+#btn2:hover{
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn2h;
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+}
+@keyframes btn2h {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+
+     }
+}
+
+#btn2:not(:hover){
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn2nh;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+}
+@keyframes btn2nh {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+     }
+}
+#btn3:active{
+    background-color: limegreen;
+}
+
+#btn3{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 25vw;
+    height: 20%;
+    text-align: center;
+    background-color: lightyellow;
+    font-size: 400%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+
+#btn3:hover{
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn3h;
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+}
+@keyframes btn3h {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+
+     }
+}
+
+#btn3:not(:hover){
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn3nh;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+}
+@keyframes btn3nh {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+     }
+}
+#btn4:active{
+    background-color: limegreen;
+}
+
+#btn4{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 25vw;
+    height: 20%;
+    text-align: center;
+    background-color: lightyellow;
+    font-size: 400%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+#btn4:hover{
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn4h;
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+}
+@keyframes btn4h {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+
+     }
+}
+
+#btn4:not(:hover){
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn4nh;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+}
+@keyframes btn4nh {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+     }
+}
+#btn5:active{
+    background-color: limegreen;
+}
+
+#btnBD{
+    position: relative;
+    left: 5%;
+    top: 0%;
+    width: 55vw;
+    height: 20%;
+    text-align: center;
+    background-color: lightyellow;
+    font-size: 400%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+
+#btnBD:hover{
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn5h;
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+}
+@keyframes btn5h {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+
+     }
+    }
+
+#btnBD:not(:hover){
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: btn5nh;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+}
+@keyframes btn5nh {
+0% {
+    box-shadow: 5px 10px rgba(0, 0, 0, 100%);
+    top: -5px;
+    }
+100%{
+    box-shadow: 5px 10px rgba(0, 0, 0, 0%);
+    top: 0px;
+     }
+}
+
+
+#infodegrade{
+    position:absolute;
+    top: 200%;
+    left: 0%;
+    
+    height: 120%;
+    width: 100%;
+    background-image: linear-gradient(gray,rgb(128,210,128),gray);
+    
+    }
+
+#info{
+position:absolute;
+top: 205%;
+left: 0%;
+
+height: 90%;
+width: 100%;
+}
+
+#Duni1{position: relative;
+width: 120%;
+height: 150%;
+top: -17%;
+}
+#Duni1:hover{
+animation-iteration-count:unset;
+animation-duration: 500ms;
+animation-name: Duni1A;
+width: 100%;
+}
+@keyframes Duni1A {
+0% {
+    width: 120%;
+}
+100%{
+    width: 100%;
+    left: 0%;
+}
+}
+#Duni1:not(:hover){
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: Duni1A2;
+    width: 120%;
+    }
+    @keyframes Duni1A2 {
+    0% {
+        width: 100%;
+    }
+    100%{
+        width: 120%;
+    }
+    }
+#Eu2{
+position: absolute;
+height: 100%;
+left: 4%;    
+width: 30%;
+border-radius: 15%;
+background-color: lightgray;
+overflow: hidden;
+}   
+#Eu2:hover{
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: Eu2A1;
+    background-color: lightgray;
+
+
+    width: 36%;
+    border-radius: 5%;
+}
+@keyframes Eu2A1 {
+0% {
+    width: 30%;  
+    border-radius: 15%;
+    }
+100%{
+    width: 36%;  
+    border-radius: 5%;
+    }
+}
+#Eu2:not(:hover){
+    animation-iteration-count:unset;
+    animation-duration: 500ms;
+    animation-name: Eu2A2;
+    background-color: lightgray;
+        
+    width: 30%;
+    border-radius: 15%;
+}
+@keyframes Eu2A2 {
+0% {
+    width: 36%;  
+    border-radius: 5%;
+    }
+100%{
+    width: 30%;  
+    border-radius: 15%;
+     }
+}
+#infotxt{position: relative;
+    top: 0%;
+    left: 45%;
+
+    height: 90%;
+    width: 50%;
+    font-size: 200%;
+}
+
+#infoul{position: relative;
+    top: -5%;
+    left: 0%;
+    height: 100%;
+    width: 90%;
+    list-style-type: square;
+}
+
+.infotxts{position: relative;
+margin-bottom: 13%;
+}
+
+#pessoal{position: absolute;
+top: 300%;
+left: 0%;
+
+width: 65%;
+height: 50%;
+}
+
+#FML{position: relative;
+top: 30%;
+font-size: 2.5vw;
+}
+#FMLA{position: relative;
+    top: 45%;
+    font-size: 200%;
+    
+    color: limegreen;
+    text-shadow: 
+    -1px -1px 3px #000, 
+    -1px 1px 3px #000,                    
+    1px -1px 3px #000,                  
+    1px 0px 3px #000;
+ }
+
+#quaseroda{position: absolute;
+  top: 355%;
+  left: 0%;
+  width: 100%;
+  height: 15% ;
+
+    background-image: linear-gradient(gray, lightgray);
+}
+
+#rodape{position: absolute;
+  top: 370%;
+  left: 0%;
+  width: 100%;
+  height: 30% ;
+
+  background-color: lightgray;
+
+  display: flex ;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#concon{position: relative;
+bottom: 15%;
+width: 25%;
+height: 40%;
+}
+
+#contatos
+{position: relative;
+left: 0%;
+top: 0%;
+
+font-size: 2.5vw;
+color: gray;
+font-family:'Maven Pro', monospace;
+text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+.publiG{
+    position: relative;;
+    left: -35%;
+  
+    width: 100%;
+    height: 75%;
+    background-color: grey;
+    border-radius: 5%;
+  
+      padding-right: 25%;
+      padding-left: 5%;
+      padding-top:  2%;
+      padding-bottom: 2%;
+      
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+
+.publi{
+  position: relative;;
+  left: -35%;
+
+  width: 100%;
+  height: 75%;
+  background-color: grey;
+  border-radius: 5%;
+
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-top:  2%;
+    padding-bottom: 2%;
+    
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
+.publiZ{
+    position: relative;;
+    left: -75%;
+  
+    width: 100%;
+    height: 75%;
+    background-color: grey;
+    border-radius: 5%;
+  
+      padding-right: 20%;
+      padding-left: 0%;
+      padding-top:  2%;
+      padding-bottom: 2%;
+      
+    margin-right: 0%;
+    margin-left: 0%;
+  } 
+
+
+.txtcenter{position: relative;
+left: 0%;
+width: 100%;
+height: 1vw;
+overflow: hidden;
+
+display: flex ;
+justify-content: space-around;
+align-items: center;
+}
+.imgcenter{position: relative;
+left: 15%;
+width: 10vw;
+height: 10vw;
+overflow: hidden;
+}
+#imgin{position: relative;
+    max-width: 100%;
+    max-height: 100%;
+   }
+
+
+#imgZap{
+    position: relative;
+    max-width: 110%;
+    max-height: 100%;
+   }
+  .txtcenterZ{position: relative;
+    left: 10%;
+    width: 100%;
+    height: 1vw;
+    overflow: hidden;
+    
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+
+
+.txtpubli{position: relative;
+    font-size: 75%;
+
+    text-decoration: underline;
+    color: #0000FF;
+}
+
+
+#imggmail{position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imgcenterG{position: relative;
+    left: 15%;
+    width: 11vw;
+    height: 10vw;
+    overflow: hidden;
+}
+.txtcenterG{position: relative;
+    left: 10%;
+    width: 100%;
+    height: 1vw;
+    overflow: hidden;
+    
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#cubi{
+position: absolute;
+background-color: aqua;
+top: 345%;
+left: 90%;
+height: 30%;
+width: 5%;
+}
